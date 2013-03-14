@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Lookup an Artist</title>
+   </head>
+   <body>
+      <h1>Lookup an Artist</h1>
+      <form method="post" action="/lookup">
+      	<input type="text" name="artist">
+      	<input type="submit" value="Lookup">
+      </form>
+
+      <h2>Results</h2>
+      <ul id="artists">
+      	<% model.artists.each { artist -> %>
+      		<li>${artist}</li>
+    		<% } %>
+      </ul>
+   </body>
+</html>

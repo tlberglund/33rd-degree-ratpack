@@ -16,6 +16,10 @@ repositories {
   maven { url "http://repo.springsource.org/repo" } // for springloaded
 }
 
+dependencies {
+  compile 'com.gmongo:gmongo:0.9.5'
+}
+
 task wrapper(type: Wrapper) {
   gradleVersion = '1.4'
 }
